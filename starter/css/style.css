@@ -9,6 +9,13 @@ body {
   line-height: 1.5;
 }
 
+.profile_name {
+  padding: 1cm;
+  border: 2cm;
+  margin: 2cm;
+  display: inline;
+}
+
 h1,
 h2,
 h3,
