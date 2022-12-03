@@ -14,12 +14,14 @@ body {
   justify-content: space-between;
   padding: 10px 10px 10px 10px;
   font-family:Georgia, 'Times New Roman', Times, serif;
-  background-color: darkslategrey;
+  background-color: rgb(135, 148, 148);
   color: black;
 }
 
 .header h1 {
   font-size: 70px;
+  background-color: white;
+  color: rgb(135, 148, 148);
 }
 
 .header nav ul {
@@ -34,6 +36,30 @@ body {
 
 a[href$=".css"] {
   color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: right;
+  height: 80px;
+  background-image: url(../images/wooden-boards.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Georgia, 'Times New Roman', Times, serif
+  
+}
+
+#flex-container {
+  display: inline-block;
+  align-items: flex-end;
+  position: relative;
+  right: 100px;
+  top: 20px;
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  color: rgb(59, 22, 8);
 }
 
 
