@@ -20,8 +20,7 @@ body {
 
 .header h1 {
   font-size: 70px;
-  background-color: white;
-  color: rgb(135, 148, 148);
+  color: white;
 }
 
 .header nav ul {
@@ -62,50 +61,44 @@ a[href$=".css"] {
   color: rgb(59, 22, 8);
 }
 
-.page-wrapper {
+.about-me {
   display: grid;
-  height: 100vh;
-  background-color: aqua;
-  grid-template-rows: 0.10fr 1fr 0.13fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "about about about"
-  "work work work"
-  "contact contact contact";
+  width: fit-content;
+  margin: 0.2%;
+  border-radius: 15px;
+  background-color: rgb(135, 148, 148);
+  grid-template-rows: 25% 90%;
+  grid-template-columns: 3fr 3fr 1fr;
+  grid-template-areas:
+  "about-me-h2 about-me-h2 about-me-img"
+  "about-me-p about-me-p about-me-img";
 }
 
+#about-me-h2 {
+  grid-area: about-me-h2;
+  align-items: center;
+  padding-left: 0.5%;
+  font-size: 30px;
+  text-decoration: underline;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-#about {
-  background-color: white;
-  grid-area: about;
+#about-me-p {
+  grid-area: about-me-p;
+  font-size: 15.5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding-left: 0.5%;
 }
 
-.A1 {
-  color:rgb(89, 94, 94)
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 30px;
-  text-decoration: underline;
-  text-decoration-thickness: 5px;
-  position: relative;
-  justify-content: center;
+#about-me-img {
+  grid-area: about-me-img;
+  height: 150px;
+  width: 150px;
+  padding: 3%;
 }
 
-.b1 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: rgb(89, 94, 94);
 
 
-}
-
-#work {
-  background-color: red;
-  grid-area: work;
-}
-
-#contact {
-  background-color: blue;
-  grid-area: contact;
-}
 
 
 
