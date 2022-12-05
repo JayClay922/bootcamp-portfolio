@@ -97,6 +97,16 @@ a[href$=".css"] {
   padding: 3%;
 }
 
+.workHeading {
+  font-size: 24px;
+  text-decoration: underline;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: right;
+  padding-right: 16px;
+}
+
+
+
 
 
 
