@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --yellow: yellow;
+}
+
+:: ::selection {
+  background-color: var(--yellow);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -101,11 +109,71 @@ a[href$=".css"] {
   font-size: 24px;
   text-decoration: underline;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-align: right;
+  text-align: center;
   padding-right: 16px;
 }
 
+#workGrid {
+  display: grid;
+  height: 60vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  "horiseon-marketing horiseon-marketing portfolio-red portfolio-red"
+  "horiseon-marketing horiseon-marketing portfolio-laptop portfolio-laptop"
+  "portfolio-sea portfolio-sea portfolio-bluepink portfolio-bluepink";
+}
 
+.workGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5px;
+  border: 10px;
+  margin: 10px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.workSubheading {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid black;
+}
+
+#horiseon-marketing {
+  grid-area: horiseon-marketing;
+  background-image: url(../images/digital-marketing-meeting.jpg);
+}
+
+a[href^="https"] {
+  color: white;
+}
+
+#portfolio-red {
+  grid-area: portfolio-red;
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+#portfolio-laptop {
+  grid-area: portfolio-laptop;
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+
+#portfolio-sea {
+  grid-area: portfolio-sea;
+  background-image: url(../images/02-portfolio-4.jpg);
+}
+
+#portfolio-bluepink {
+  grid-area: portfolio-bluepink;
+  background-image: url(../images/02-portfolio-3.jpg);
+}
 
 
 
