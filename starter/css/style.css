@@ -2,14 +2,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --yellow: yellow;
-}
-
-:: ::selection {
-  background-color: var(--yellow);
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -21,8 +13,10 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 10px 10px 10px 10px;
+  margin: 5px;
   font-family:Georgia, 'Times New Roman', Times, serif;
   background-color: rgb(135, 148, 148);
+  border-radius: 15px;
   color: black;
 }
 
@@ -53,8 +47,9 @@ a[href$=".css"] {
   background-image: url(../images/wooden-boards.png);
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: Georgia, 'Times New Roman', Times, serif
-  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 15px;
+  margin: 5px;
 }
 
 #flex-container {
@@ -75,6 +70,7 @@ a[href$=".css"] {
   margin: 0.2%;
   border-radius: 15px;
   background-color: rgb(135, 148, 148);
+  color: white;
   grid-template-rows: 25% 90%;
   grid-template-columns: 3fr 3fr 1fr;
   grid-template-areas:
@@ -124,18 +120,22 @@ a[href$=".css"] {
   "portfolio-sea portfolio-sea portfolio-bluepink portfolio-bluepink";
 }
 
+
 .workGridArea {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 5px;
-  border: 10px;
+  border: 10px solid rgb(135, 148, 148);
+  border-radius: 15px;
   margin: 10px;
   cursor: pointer;
   display: grid;
   align-content: end;
-  transition: all 0.3s ease-in-out;
-  background-color: white;
+}
+
+.workGridArea:hover {
+  filter: grayscale(100%);
 }
 
 .workSubheading {
@@ -149,6 +149,7 @@ a[href$=".css"] {
 #horiseon-marketing {
   grid-area: horiseon-marketing;
   background-image: url(../images/digital-marketing-meeting.jpg);
+  transition: all 0.5s ease-in-out;
 }
 
 a[href^="https"] {
@@ -175,7 +176,21 @@ a[href^="https"] {
   background-image: url(../images/02-portfolio-3.jpg);
 }
 
+.footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: rgb(135, 148, 148);
+  padding: 20px 40px;
+  border-radius: 15px;
+  margin: 5px;
+}
 
+.contact-info {
+  font-size: 17.5px;
+  color: white;
+}
 
 
 
