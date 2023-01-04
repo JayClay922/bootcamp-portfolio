@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -100,7 +104,7 @@ a[href$=".css"] {
   padding: 3%;
 }
 
-.workHeading {
+#workHeading {
   font-size: 24px;
   text-decoration: underline;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -162,6 +166,10 @@ a[href$=".css"] {
 
 a[href^="https"] {
   color: white;
+}
+
+a[href^="#"] {
+  color:white;
 }
 
 #portfolio-red {
